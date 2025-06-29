@@ -194,7 +194,7 @@ Regeln befinden sich in:
 
 ## 8. Screenshots
 
-_Hinweis: Screenshots befinden sich im Ordner `/assets/screenshots/` oder können bei Bedarf eingebunden werden._
+_Hinweis: Die Screenshots befinden sich im Ordner `/screenshots/` im Hauptverzeichnis und können bei Bedarf direkt im README eingebunden werden._
 
 ---
 
