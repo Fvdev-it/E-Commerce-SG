@@ -1,0 +1,47 @@
+
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 🛒 Carts – Admins dürfen alles, User nur eigenen Warenkorb
+    match /carts/{userId} {
+      allow read, write: if request.auth != null && (
+        request.auth.uid == userId || request.auth.token.admin == true
+      );
+    }
+
+    // 📦 Orders – Admins dürfen alles, User nur eigene erstellen & lesen
+    match /orders/{orderId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null && (
+        resource.data.user.uid == request.auth.uid || request.auth.token.admin == true
+      );
+      allow update, delete: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // 👤 Users – Zugriff nur auf eigene Daten oder Admin
+    match /users/{userId} {
+      allow read, write: if request.auth != null && (
+        request.auth.uid == userId || request.auth.token.admin == true
+      );
+
+      // 📍 Subcollection: addresses
+      match /addresses/{addressId} {
+        allow read, write: if request.auth != null && (
+          request.auth.uid == userId || request.auth.token.admin == true
+        );
+      }
+    }
+
+    // 🛍️ Products – öffentlich lesbar, Admin darf alles
+    match /products/{productId} {
+      allow read: if true;
+
+      allow create, update, delete: if request.auth != null && request.auth.token.admin == true;
+
+      allow update: if request.auth != null &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['stock', 'status']);
+    }
+  }
+}

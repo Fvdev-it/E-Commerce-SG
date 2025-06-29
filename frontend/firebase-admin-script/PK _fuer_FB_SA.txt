@@ -1,0 +1,19 @@
+🔐 Private Key für Firebase Service Account generieren
+Gehe zur Firebase Console:
+https://console.firebase.google.com
+
+Wähle dein Projekt aus (oben in der Projektübersicht).
+
+Gehe in die Projekteinstellungen:
+Klick auf das Zahnrad-Symbol (⚙️) oben links → "Projekteinstellungen".
+
+Wechsle zum Tab "Service Accounts" oder Dienstkonten,
+
+Klicke auf "Neuen privaten Schlüssel generieren".
+
+Firebase zeigt einen Warnhinweis → Bestätige mit "Erstellen".
+
+Der Schlüssel wird als .json-Datei heruntergeladen.
+⚠️ Bewahre ihn sicher auf! Er enthält sensible Zugangsdaten.
+
+Fügen sie diesen .json-Datei dann in E-commerce/frontend/firebase-admin-script ein.

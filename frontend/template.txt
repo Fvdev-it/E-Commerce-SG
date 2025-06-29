@@ -1,0 +1,70 @@
+<div style="font-family: Arial, sans-serif; font-size: 14px; color: #333; background-color: #f5f5f5; padding: 20px;">
+  <div style="max-width: 600px; margin: auto; background-color: #fff; border: 1px solid #ddd;">
+
+    <!-- Header -->
+    <div style="border-top: 6px solid #458500; padding: 16px 24px; display: flex; align-items: center;">
+      <a href="https://deine-domain.de" target="_blank" style="text-decoration: none;">
+        <img src="cid:logo.png" alt="Logo" style="height: 32px; margin-right: 12px;" />
+      </a>
+      <span style="font-size: 16px; font-weight: bold;">Vielen Dank für deine Bestellung!</span>
+    </div>
+
+    <!-- Body -->
+    <div style="padding: 0 24px 24px;">
+      <p>Wir informieren dich per E-Mail, sobald deine Bestellung versendet wurde.</p>
+      <p><strong>Bestellnummer:</strong> {{order_id}}</p>
+
+      <!-- Produkte -->
+      {{#orders}}
+      <table style="width: 100%; margin-bottom: 16px; border-bottom: 1px solid #ccc;">
+        <tr>
+          <td style="padding: 12px 0; width: 80px;">
+            <img src="{{image_url}}" alt="{{name}}" style="width: 64px; height: auto;" />
+          </td>
+          <td style="padding: 12px 8px; vertical-align: top;">
+            <div style="font-weight: bold;">{{name}}</div>
+            <div style="font-size: 13px;">Menge: {{units}}</div>
+            {{#size}}<div style="font-size: 13px;">Größe: {{size}}</div>{{/size}}
+            {{#color}}<div style="font-size: 13px;">Farbe: {{color}}</div>{{/color}}
+          </td>
+          <td style="text-align: right; padding: 12px 0; white-space: nowrap; vertical-align: top;">
+            <strong>{{price}} €</strong>
+          </td>
+        </tr>
+      </table>
+      {{/orders}}
+
+      <!-- Kostenübersicht -->
+      <table style="width: 100%; margin-top: 24px; font-size: 14px;">
+        <tr>
+          <td style="width: 60%;"></td>
+          <td style="text-align: right;">Versand:</td>
+          <td style="text-align: right; white-space: nowrap;">{{cost.shipping}} €</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="text-align: right;">Nachnahmegebühr:</td>
+          <td style="text-align: right; white-space: nowrap;">{{cost.cod}} €</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="text-align: right; border-top: 2px solid #333; padding-top: 8px;"><strong>Gesamtsumme:</strong></td>
+          <td style="text-align: right; border-top: 2px solid #333; padding-top: 8px; white-space: nowrap;"><strong>{{cost.total}} €</strong></td>
+        </tr>
+      </table>
+
+      <!-- Adresse & Zahlungsart -->
+      <div style="margin-top: 24px;">
+        <p><strong>Versandadresse:</strong><br />{{shipping_address}}</p>
+        <p><strong>Zahlungsart:</strong> {{payment_method}}</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="padding: 16px 24px; font-size: 12px; color: #777; text-align: center;">
+      Diese E-Mail wurde an <strong>{{email}}</strong> gesendet.<br />
+      Du erhältst sie, weil du bei SHOPNAME bestellt hast.
+    </div>
+
+  </div>
+</div>
