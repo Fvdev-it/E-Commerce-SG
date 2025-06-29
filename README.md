@@ -220,8 +220,8 @@ Dieses Projekt steht unter der Creative Commons BY-NC-ND 4.0 International Lizen
 
 ## 10. Kontakt
 
-📬 Entwickler: https://github.com/Fvdev-it
-💼 Portfolio: fvdev.it
+- 📬 Entwickler: https://github.com/Fvdev-it
+- 💼 https://Portfolio: fvdev.it
 
 ---
 
