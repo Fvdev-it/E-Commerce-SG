@@ -195,6 +195,40 @@ Regeln befinden sich in:
 ## 8. Screenshots
 
 _Hinweis: Die Screenshots befinden sich im Ordner `/screenshots/` im Hauptverzeichnis und können bei Bedarf direkt im README eingebunden werden._
+### Admin-Bereich
+
+![AdminPanel](./screenshots/AdminPanel.png)  
+![APProdukte](./screenshots/APProdukte.png)  
+![APProdukte2](./screenshots/ADProdukte2.png)  
+![APImport](./screenshots/APImport.png)  
+![APBestellungen](./screenshots/APBestellungen.png)
+
+---
+
+### Kundenbereich
+
+![Home1](./screenshots/Home1.png)  
+![Home2](./screenshots/Home2.png)  
+![Home3](./screenshots/Home3.png)  
+![Home4](./screenshots/Home4.png)
+
+---
+
+### Checkout & Bestellung
+
+![Checkout1](./screenshots/Checkout1.png)  
+![Checkout2](./screenshots/Checkout2.png)  
+![OrderConfirm](./screenshots/OrderConfirm.png)  
+![Warenkorb1](./screenshots/Warenkorb1.png)  
+![Warenkorb2](./screenshots/Warenkorb2.png)
+
+---
+
+### Nutzerprofil & Bestellungen
+
+![Kundenprofil](./screenshots/Kundenprofil.png)  
+![Bestellungen](./screenshots/Bestellungen.png)
+
 
 ---
 
