@@ -207,16 +207,21 @@ Die vollständige Übersicht aller Screenshots befindet sich im Ordner [`/screen
 ---
 
 ## 9. Lizenz
+Dieses Projekt steht unter der Creative Commons BY-NC-ND 4.0 International Lizenz.
 
-Dieses Projekt ist ausschließlich für Portfolio- & Lernzwecke freigegeben.  
-Kein produktiver Einsatz ohne Lizenzklärung mit dem Entwickler.
+- ✅ Verwendung für persönliche Lern- und Portfoliozwecke ist erlaubt
+- ❌ Kommerzielle Nutzung ist nicht gestattet
+- ❌ Weiterverbreitung veränderter Versionen ist untersagt
+- ℹ️ Namensnennung des Autors ist erforderlich
+  
+➡️ Lizenz: creativecommons.org/licenses/by-nc-nd/4.0/deed.de
 
 ---
 
 ## 10. Kontakt
 
-Fragen, Feedback oder Interesse am Code?  
-**[folgt]**
+📬 Entwickler: https://github.com/Fvdev-it
+💼 Portfolio: fvdev.it
 
 ---
 
