@@ -214,7 +214,7 @@ Dieses Projekt steht unter der Creative Commons BY-NC-ND 4.0 International Lizen
 - ❌ Weiterverbreitung veränderter Versionen ist untersagt
 - ℹ️ Namensnennung des Autors ist erforderlich
   
-➡️ Lizenz: creativecommons.org/licenses/by-nc-nd/4.0/deed.de
+➡️ Lizenz: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de
 
 ---
 
